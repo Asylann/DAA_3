@@ -6,7 +6,7 @@ import java.util.Map;
 public class DisjointSet {
     private final Map<String, String> parent = new HashMap<>();
     private final Map<String, Integer> rank = new HashMap<>();
-    public long operations = 0; // count union/find operations
+    public long operations = 0; // So here is count union and find operations
 
     public void makeSet(String x) {
         parent.put(x, x);
@@ -15,7 +15,7 @@ public class DisjointSet {
     }
 
     public String find(String x) {
-        operations++; // for the find call
+        operations++; // So here is for the find call
         String p = parent.get(x);
         if (p == null) return null;
         if (!p.equals(x)) {
@@ -27,7 +27,7 @@ public class DisjointSet {
     }
 
     public boolean union(String a, String b) {
-        operations++; // union attempt
+        operations++;
         String ra = find(a);
         String rb = find(b);
         if (ra == null || rb == null) return false;

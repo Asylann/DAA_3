@@ -9,7 +9,7 @@ import assignment3.structs.Edge;
 
 public class Util {
     public static List<Map<String, Object>> edgesToList(List<Edge> edges) {
-        // normalize edges so from <= to lexicographically, then sort by weight, then from, then to
+        // So here is normalizing edges
         List<Edge> copy = new ArrayList<>();
         for (Edge e : edges) {
             String a = e.from;
@@ -35,7 +35,7 @@ public class Util {
         return Math.round(v * 100.0) / 100.0;
     }
 
-    // minimal JSON writer for the expected structure
+    // So here is JSON writer for the expected structure
     public static String toJson(List<Map<String, Object>> results) {
         StringBuilder sb = new StringBuilder();
         sb.append("{\n  \"results\": [\n");

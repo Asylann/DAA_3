@@ -11,7 +11,7 @@ import assignment3.structs.Graph;
 public class InputParser {
     public static List<Graph> parse(String filePath) throws IOException {
         String s = new String(Files.readAllBytes(Paths.get(filePath)), java.nio.charset.StandardCharsets.UTF_8);
-        // very small ad-hoc parser tailored to the provided input format
+
         List<Graph> graphs = new ArrayList<>();
         String gArray = s.substring(s.indexOf("["), s.lastIndexOf("]") + 1);
         String[] items = gArray.split("\\n\\s*\\},\\s*\\{");
