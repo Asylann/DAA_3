@@ -105,7 +105,7 @@ For **city transportation networks**:
 
 1. Prim, R. C. (1957). *Shortest connection networks and some generalizations*. Bell System Technical Journal, 36(6), 1389–1401.
 2. Kruskal, J. B. (1956). *On the shortest spanning subtree of a graph*. Proceedings of the AMS, 7(1), 48–50.
-3. 
+3. Also it was useful to read from https://lms.astanait.edu.kz/pluginfile.php/67477/mod_resource/content/0/Lecture_6-Disjoint_sets_MST.pdf
 ---
 
 ## Also, proper commit storyline
